@@ -12,7 +12,7 @@ class App extends Component {
       room: "default_room",
     };
 
-    this.client = new W3CWebSocket('wss://127.0.0.1:8000/ws/chat/' + this.state.room + '/');
+    this.client = new W3CWebSocket('ws://127.0.0.1:8000/ws/chat/' + this.state.room + '/');
   }
 
   
@@ -120,7 +120,7 @@ class App extends Component {
                       <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl text-center">
                           Sign in to your room
                       </h1>
-                      <form className="space-y-4 md:space-y-6" action="#" onSubmit={ value => this.setState({ isLoggedIn: true})}>
+                      <form className="space-y-4 md:space-y-6" onSubmit={e => { e.preventDefault(); this.setState({ isLoggedIn: true }); }}>
                           <div>
                               <label htmlFor="username" className="block mb-2 text-sm font-medium text-gray-900">Your username</label>
                               <input type="username" name="username" id="username" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5" placeholder="name@company.com" required  value={this.state.name} onChange={ e => {this.setState({name:e.target.value}); this.value = this.state.name;}}/>
