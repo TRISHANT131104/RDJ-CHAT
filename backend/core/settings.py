@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-vr=bf)3!^=q7c#0cu6tpfjn!ykk^cy^ci70g^&38q=&rro&d(@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -101,7 +101,7 @@ DATABASES = {
     }
 }
 
-DATABASES['default'] = dj_database_url.parse("postgres://trishant:A2Ycft9pjfYG1KPN4JleqPdiVhSF7ut2@dpg-cl1svs8p2gis73fna6e0-a.singapore-postgres.render.com/todolist_o69h")
+DATABASES['default'] = dj_database_url.parse("postgres://trishant:A2Ycft9pjfYG1KPN4JleqPdiVhSF7ut2@dpg-cl1svs8p2gis73fna6e0-a/todolist_o69h")
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
