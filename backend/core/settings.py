@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-vr=bf)3!^=q7c#0cu6tpfjn!ykk^cy^ci70g^&38q=&rro&d(@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["rdj-chat-app.onrender.com","localhost","127.0.0.1"]
 
 
 # Application definition
