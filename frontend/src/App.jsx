@@ -12,7 +12,7 @@ class App extends Component {
       room: "default_room",
     };
 
-    this.client = new W3CWebSocket('wss://rdj-chat-app.onrender.com//ws/chat/' + this.state.room + '/');
+    this.client = new W3CWebSocket('wss://rdj-chat-app.onrender.com/ws/chat/' + this.state.room + '/');
   }
 
   
